@@ -22,7 +22,7 @@ Each document loaded into `currency_db.exchange_rates`:
   "exchange_rate": 1.1134,
   "rate_date": "2026-11-12",
   "source": "Frankfurter API",
-  "retrieved_at": "2026-11-12T19:40:00"
+  "retrieved_at": "2026-11-12T14:49:26"
 }
 ```
 
@@ -39,6 +39,6 @@ Each document loaded into `currency_db.exchange_rates`:
 ```bash
 cp .env.example .env
 astro dev start
-# Airflow UI: http://localhost:8080   Mongo Express: http://localhost:8081
+# Airflow UI: URL printed by astro dev start   Mongo Express: http://localhost:8081
 astro dev run dags trigger currency_exchange_etl
 ```
