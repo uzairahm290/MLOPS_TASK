@@ -28,7 +28,7 @@ Each document loaded into `currency_db.exchange_rates`:
 
 ## Docker setup (`docker-compose.override.yml`)
 
-- **mongodb** (`mongo:7.0`): port 27017, healthcheck
+- **mongodb** (`mongo:latest`): port 27017, healthcheck
 - **mongo-express** (`mongo-express:1.0.2`): http://localhost:8081 (admin / admin123)
 - **Networking:** custom bridge network `currency_etl_network`; MongoDB is also attached to the Astro `airflow` network so the scheduler reaches it at `mongodb:27017`
 - **Persistent storage:** named volumes `currency_mongo_data` (`/data/db`) and `currency_mongo_config`
